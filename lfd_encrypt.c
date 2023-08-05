@@ -64,8 +64,8 @@
 #define ENC_BUF_SIZE VTUN_FRAME_SIZE + 128 
 #define ENC_KEY_SIZE 16
 
-BF_KEY key;
-char * enc_buf;
+extern BF_KEY key;
+extern char * enc_buf;
 char * dec_buf;
 
 #define CIPHER_INIT		0
