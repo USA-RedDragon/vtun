@@ -22,6 +22,7 @@
             ];
             src = self;
             configureFlags = [
+              "--prefix=/"
               "--without-lzo-lib"
               "--with-lzo-headers=${pkgs.lzo}/include/lzo"
               "--with-lzo-lib=${pkgs.lib.getLib pkgs.lzo}/lib"
@@ -31,7 +32,7 @@
             ];
             enableParallelBuilding = true;
             buildPhase = "make";
-            installPhase = ''make INSTALL_OWNER= DESTDIR="$out" install'';
+            installPhase = ''make INSTALL_OWNER= DESTDIR=$out install'';
 
             meta = {
               description = "virtual tunnel over TCP/IP networks";
