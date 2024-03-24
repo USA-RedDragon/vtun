@@ -14,6 +14,7 @@
         packages = rec {
           default = pkgs.stdenv.mkDerivation rec {
             name = "vtun";
+            version = "3.0.3";
             nativeBuildInputs = with pkgs; [
               bison flex gnumake pkg-config
             ];
@@ -49,6 +50,7 @@
 
                 Note: This program includes an "encryption" feature intended to protect the tunneled data as it travels across the network. However, the protocol it uses is known to be very insecure, and you should not rely on it to deter anyone but a casual eavesdropper. See the included README.Encryption file for more information.
               '';
+              inherit version;
             };
           };
 
