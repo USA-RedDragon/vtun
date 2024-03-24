@@ -1,7 +1,7 @@
 {
   description = "Virtual tunnel over TCP/IP networks";
 
-  inputs.nixpkgs.url = github:NixOS/nixpkgs;
+  inputs.nixpkgs.url = github:NixOS/nixpkgs/nixos-23.11;
   inputs.flake-utils.url = github:numtide/flake-utils;
 
   outputs = { self, nixpkgs, flake-utils }:
