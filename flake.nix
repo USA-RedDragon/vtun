@@ -35,7 +35,7 @@
 
             meta = {
               description = "virtual tunnel over TCP/IP networks";
-              license = pkgs.lib.licenses.bsd3;
+              license = pkgs.lib.licenses.gpl2Plus;
               platforms = pkgs.lib.platforms.unix;
               longDescription = ''
                 VTun is the easiest way to create virtual tunnels over TCP/IP networks with traffic shaping and compression.
